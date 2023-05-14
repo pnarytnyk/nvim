@@ -1,6 +1,7 @@
 require("settings")
 require("plugins")
 require("maps") -- key mappings
+require("opts")
 
 -- colorscheme config: kanagawa
 local themeStatus, kanagawa = pcall(require, "kanagawa")
