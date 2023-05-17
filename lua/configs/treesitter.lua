@@ -15,7 +15,6 @@ ts.setup({
     ensure_installed = {
         "markdown",
         "tsx",
-        "typescript",
         "javascript",
         "toml",
         "c_sharp",

@@ -32,8 +32,3 @@ nvim_lsp.cssls.setup({
     capabilities = capabilities,
 })
 
--- Tailwind
-nvim_lsp.tailwindcss.setup({
-    on_attach = on_attach,
-    capabilities = capabilities,
-})
