@@ -159,22 +159,29 @@ return require("packer").startup(function(use)
         end,
     })
 
-    -- Background Transparent
-    use({
-        "xiyaowong/nvim-transparent",
+    use ({
+        'numToStr/Comment.nvim',
         config = function()
-            require("transparent").setup({
-                enable = true,
-                extra_groups = {
-                    "BufferLineTabClose",
-                    "BufferlineBufferSelected",
-                    "BufferLineFill",
-                    "BufferLineBackground",
-                    "BufferLineSeparator",
-                    "BufferLineIndicatorSelected",
-                },
-                exclude = {},
-            })
-        end,
+            require('Comment').setup()
+    end
     })
+
+    -- Background Transparent
+--    use({
+--        "xiyaowong/nvim-transparent",
+--        config = function()
+--            require("transparent").setup({
+--                enable = true,
+--                extra_groups = {
+--                    "BufferLineTabClose",
+--                    "BufferlineBufferSelected",
+--                    "BufferLineFill",
+--                    "BufferLineBackground",
+--                    "BufferLineSeparator",
+--                    "BufferLineIndicatorSelected",
+--                },
+--                exclude = {},
+--            })
+--        end,
+--    })
 end)

@@ -6,6 +6,7 @@ local status, telescope = pcall(require, "telescope.builtin")
 if status then
     -- Telescope
     map("n", "<leader>ff", telescope.find_files)
+    map("n", "<leader>ff", "<CMD>:Telescope find_files hidden=true<CR>")
     map("n", "<leader>fg", telescope.live_grep)
     map("n", "<leader>fb", telescope.buffers)
     map("n", "<leader>fh", telescope.help_tags)
